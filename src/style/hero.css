@@ -1,0 +1,30 @@
+.hero-section {
+  min-height: 88vh;
+  background-color: #fcfcfc;
+  /* Optional: add your background image here */
+}
+
+.sliding-text-container {
+  height: 60px; /* Adjust based on font size */
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #00d4ff;
+}
+
+.sliding-text {
+  display: block;
+  position: relative;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
