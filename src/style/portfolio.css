@@ -1,0 +1,53 @@
+
+/* Container must be relative so overlay can be absolute */
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
+
+/* The dark background that appears on hover */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay when hovering over the image container */
+.portfolio-img:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Style for the 'Details' button */
+.details-btn {
+    padding: 10px 25px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: transparent;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* make cards equal height and stretch text area */
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-card .portfolio-text {
+    flex-grow: 1;
+}

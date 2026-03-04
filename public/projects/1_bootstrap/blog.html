@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Medium Daily Digest</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #d3d2d2;
+        margin: 0;
+        padding: 40px;
+        color: #000;
+      }
+
+      .container {
+        background-color: #fff;
+        max-width: 700px;
+        margin: auto;
+        padding: 30px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .avatar {
+        background-color: #5a69c7;
+        color: white;
+        font-weight: bold;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      .info p {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .logo {
+        font-family: Georgia, serif;
+        font-size: 40px;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .highlight {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 16px;
+        text-transform: uppercase;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #af0f0f;
+        margin: 10px 0 20px;
+      }
+
+      .card {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+      }
+
+      .card-content {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .card img {
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .author {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .desc {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 8px;
+      }
+
+      .meta {
+        font-size: 12px;
+        color: #777;
+        display: flex;
+        gap: 15px;
+      }
+
+      .cta-section {
+        text-align: center;
+        padding: 30px 10px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .cta-section p {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .cta-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 15px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 25px;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .footer p {
+        margin: 10px 0;
+      }
+
+      .footer a {
+        color: #fff;
+        margin: 0 5px;
+        text-decoration: underline;
+      }
+
+      .store-icons img {
+        height: 35px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="profile">
+        <div class="avatar">V</div>
+        <div class="info">
+          <p>Stories for <strong>Vinayak</strong></p>
+          <p style="font-size: 14px; color: gray">
+            @sutar · <span class="green">Become a member</span>
+          </p>
+        </div>
+      </div>
+
+      <h1 class="logo"><span class="bold">Medium</span> Daily Digest</h1>
+      <hr />
+      <p class="highlight">Today’s Highlights</p>
+      <hr />
+
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">The NYT Open Team</div>
+          <div class="title">Using Provocations to Shake the Status Quo</div>
+          <div class="desc">
+            The bold approach NYT Cooking used to define a...
+          </div>
+          <div class="meta">
+            <span>Jul 22</span>
+            <span>👏 70</span>
+            <span>💬 1</span>
+          </div>
+        </div>
+        <img src="img/download.jpeg" alt="Image 1" />
+      </div>
+      <hr />
+
+      <!-- Card 2-->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">Jawwad Ahmed Farid in Bootcamp</div>
+          <div class="title">Pricing power.</div>
+          <div class="desc">The no nonsense guide to pricing products.</div>
+          <div class="meta">
+            <span>⭐ 2d ago</span>
+            <span>👏 37</span>
+          </div>
+        </div>
+        <img src="img/blog2.jpeg" alt="Image 2" />
+      </div>
+      <hr />
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">Tasha Onwu in UX Collective</div>
+          <div class="title">Layers of Law: Designing for Justice</div>
+          <div class="desc">
+            London goes beyond any boundary or convention...
+          </div>
+          <div class="meta">
+            <span>4d ago</span>
+            <span>👏 135</span>
+          </div>
+        </div>
+        <img src="img/blog3.jpeg" alt="Image 3" />
+      </div>
+      <hr />
+
+      <!--Card 4 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">Joe Kavanerath</div>
+          <div class="title">Forget SEO. Everyone Does RAO.</div>
+          <div class="desc">Search Engine Optimization, or SEO in short...</div>
+          <div class="meta">
+            <span>🔥 54d ago</span>
+            <span>👏 1.3K</span>
+            <span>💬 37</span>
+          </div>
+        </div>
+        <img src="img/blog4.jpeg" alt="Image 4" />
+      </div>
+      <hr />
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">Social Staff</div>
+          <div class="title">The Death of Agile</div>
+          <div class="desc">
+            Do you recall when Scrum was the rage? When was...
+          </div>
+          <div class="meta">
+            <span>📅 4d ago</span>
+            <span>👏 1.4K</span>
+            <span>💬 273</span>
+          </div>
+        </div>
+        <img src="img/blog5.jpeg" alt="Image 5" />
+      </div>
+      <hr />
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">Daisy Williams in UX Collective</div>
+          <div class="title">Click-to-cancel lost the battle</div>
+          <div class="desc">How the FTC’s click-to-cancel rule might be...</div>
+          <div class="meta">
+            <span>⭐ 1d ago</span>
+            <span>👏 92</span>
+          </div>
+        </div>
+        <img src="img/img-6.jpg" alt="Image 6" />
+      </div>
+      <hr />
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="card-content">
+          <div class="author">Scripting Soul</div>
+          <div class="title">How to Think Like a Front-End Architect</div>
+          <div class="desc">
+            Much of us start out building components. But as the...
+          </div>
+          <div class="meta">
+            <span>⭐ 2d ago</span>
+            <span>👏 139</span>
+          </div>
+        </div>
+        <img src="img/img-7.jpg" alt="Image 7" />
+      </div>
+      <hr />
+
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <p>See more of what you like and less of what you don’t.</p>
+        <button class="cta-button">Control your recommendations</button>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p><strong>Read from anywhere.</strong></p>
+        <div class="store-icons">
+          <a href="https://apps.apple.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" /></a>
+          <a href="https://play.google.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" /></a>
+        </div>
+        <p>
+          Sent by Medium · 3500 South DuPont Highway, Suite IQ-101, Dover, DE
+          19901
+        </p>
+        <p>
+          <a href="#">Unsubscribe</a> ·
+          <a href="#">Switch to the Weekly Digest</a> ·
+          <a href="#">Careers</a> · <a href="#">Help Center</a> ·
+          <a href="#">Privacy Policy</a> ·
+          <a href="#">Terms of service</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

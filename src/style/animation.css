@@ -1,0 +1,46 @@
+.reset-anim {
+  opacity: 0;
+  visibility: hidden;
+  transition: none; /* Instant reset when you scroll away */
+}
+
+/* --- Triggered Animation States --- */
+.animate-left {
+  visibility: visible;
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-right {
+  visibility: visible;
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+
+
+
+/* --- Keyframes --- */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+

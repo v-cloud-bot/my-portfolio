@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" ></script>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .s {
+   position: sticky;
+  top: 10px; /* Required to define the offset */
+  }
+  p {
+    font-size: 1.3rem;
+  }
+
+  .links {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        
+      }
+
+.text-warning {
+   color: rgb(255, 80, 0);
+}
+.btn-warning {
+  background-color: rgb(255, 90, 0);
+  color: white;
+
+}
+.border-none {
+  border: none;
+
+}
+.text-end {
+  display: flex;
+  justify-content: right;
+}
+.o {
+  background-color: rgb(254, 237, 214);
+  
+}
+
+ .not-hidden {
+  display: none;
+ }
+ .b1{
+  background-color: rgb(252, 152, 66);
+}
+.b {
+  background-color: rgb(94, 10, 4);
+  color: aliceblue;
+}
+.b:hover {
+  background-color: rgb(181, 15, 3);
+  color: aliceblue;
+}
+.bg {
+  background-color: rgb(252, 241, 217);
+}
+ @media screen and (max-width: 576px) {
+  p {
+    font-size: 1.2rem;
+  }
+.not-hidden {
+  display: block;
+  width: 10%;
+  height: 30px;
+  background-color:aliceblue ;
+}
+.in {
+  
+  display: flex;
+  
+}
+.hidden {
+  display: none;
+}
+ .d {
+  display: flex;
+  flex-direction: column;
+ }
+ .c {
+  width: 100%;
+ }
+  
+ }
+
+
+</style>
+<body class="bg-light">
+  <nav class="container-fluid o">
+    <div class="row s" >
+      <div class="col-4 pt-3 "><img class="mx-4" src="img/logo_onmifood.png" alt="logo" width="40%"></div>
+      <div class="col-8 text-end pt-3 ">
+        <ul class="nav hidden " type="none">
+            <li class="nav-item"><a class="links mx-3" href="#">How it works</a></li>
+            <li class="nav-item"><a class="links mx-3" href="#">Meals</a></li>
+            <li class="nav-item"><a class="links mx-3" href="#">Testimonials</a></li>
+            <li class="nav-item"><a class="links mx-3" href="#">Pricing</a></li>
+            <li class="nav-item"><button class="btn btn-sm rounded btn-warning border-none" type="button"><strong>Try for Free</strong></button>
+        </ul>
+        <button type="button" class="not-hidden">('-')</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid o ">
+    <div class="row p-5 ">
+      <div class="col-sm-6 mt-3">
+        <h1 class="display-3"><strong>A healthy meal</strong> </h1>
+        <h1 class="display-3"><strong>delivered to your</strong></h1>
+        <h1 class="display-3"><strong>door, every single day</strong></h1>
+        <p class="my-5">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
+          <button type="button" class="btn btn-warning border-none rounded "><strong>Start eating well</strong></button>
+          <button type="button" class="btn btn-light border-none rounded mx-4"><strong>Learn more &downarrow;</strong></button>
+      <div class="my-5">
+        <img class="rounded-circle " style="margin: -10px; border: 4px solid white;" src="img/laura-jones.jpg" alt="laura-jones" width="10%" height="60px">
+        <img class="rounded-circle " style="margin: -10px; border: 4px solid white;" src="img/laura-jones.jpg" alt="laura-jones" width="10%" height="60px">
+        <img class="rounded-circle " style="margin: -10px; border: 4px solid white;" src="img/laura-jones.jpg" alt="laura-jones" width="10%" height="60px">
+        <img class="rounded-circle " style="margin: -10px; border: 4px solid white;" src="img/laura-jones.jpg" alt="laura-jones" width="10%" height="60px">
+        <img class="rounded-circle " style="margin: -10px; border: 4px solid white;" src="img/laura-jones.jpg" alt="laura-jones" width="10%" height="60px">
+
+        <img class="rounded-circle " style="margin: -10px; border: 4px solid white;" src="img/laura-jones.jpg" alt="laura-jones" width="10%" height="60px">
+        <span class="mx-3 fs-5"><strong><span class="text-warning">250,000+</span> meals delivered last year</strong></span>
+      </div>
+
+      </div>
+      <div class="col-sm-6 mt-3">    
+              <img src="img/1_onmifood.webp" alt="abc img" width="100%" height="600px"> 
+                
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+   
+  <section class="container my-5">
+    <div class="text-center">
+        
+        <p class="text-secondary"><small>AS FEATURED IN</small></p>
+      </div>
+    <div class="row text-center">
+      <div class="col-sm-3 p-2"><img src="img/Omnifood Images/logos/techcrunch.png" alt="logos" width="70%" height="30px"></div>
+      <div class="col-sm-2 p-2"><img src="img/Omnifood Images/logos/business-insider.png" alt="logos" width="70%" height="30px"></div>
+      <div class="col-sm-2 p-2"><img src="img/Omnifood Images/logos/the-new-york-times.png" alt="logos" width="70%" height="30px"></div>
+      <div class="col-sm-2 p-2"><img src="img/Omnifood Images/logos/forbes.png" alt="logos" width="70%" height="30px"></div>
+      <div class="col-sm-3 p-2"><img src="img/Omnifood Images/logos/usa-today.png" alt="logos" width="70%" height="30px"></div>
+    </div>
+  </section>
+
+<!--  -->
+ 
+  <div class="container my-5">
+    <div class="text-start">
+      <p><spam class="text-warning"><strong>HOW IT WORKS</strong></spam></p>
+       <p class="display-5"><strong>Your daily dose of health in 3 simple steps</strong></p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-sm-6 mt-5 p-3">
+        <p class="text-secondary display-3 mt-5">01</p>
+        <p class=" display-6 "><strong>Tell us what you like (and what not)</strong></p>
+        <p>Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!</p>        
+      </div> 
+      <div class="col-sm-6  text-center">
+        <img  src="img/2_onmifood.png" alt="abc" width="40%" height="500px">
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-sm-6 text-center p-3">
+        <img  src="img/2_onmifood.png" alt="abc" width="40%" height="500px">
+      </div>
+      <div class="col-sm-6 mt-5">
+        <p class="text-secondary display-3 mt-5">02</p>
+        <p class=" display-6 "><strong>Approve your weekly meal plan</strong></p>
+          <p>Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
+        
+      </div> 
+      
+    </div>
+    <div class="row mt-4">
+      <div class="col-sm-6 p-3">
+        <p class="text-secondary display-3 mt-5">03</p>
+        <p class=" display-6 "><strong>Receive meals at convenient time</strong></p>
+          <p>Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!</p>
+        
+      </div> 
+      <div class="col-sm-6 text-center">
+        <img  src="img/2_onmifood.png" alt="abc" width="40%" height="500px">
+      </div>
+    </div>
+  </div>
+   <!--  -->
+
+ 
+<style>
+  /* equalize meal cards */
+  .meal-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .meal-card img {
+    flex-shrink: 0;
+  }
+  .meal-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>
+
+<div class="container mt-5 ">
+    <div class="text-center">
+      <p><spam class="text-warning"><strong>MEALS</strong></spam></p>
+       <p class="display-5"><strong>Omnifood AI chooses from 5000+recipes</strong></p>
+    </div>
+    <div class="row  my-2  ">
+      <div class="col-sm-4  p-3 ">
+        <div class="bg-white rounded shadow meal-card">
+          <div class="rounded">
+            <img class="rounded" src="img/3_onmifood.jpg" alt="abc" width="100%" height="400px">
+          </div>
+          <div class="mt-4 p-3 px-5 meal-card-body">
+            <div>
+              <button class="btn btn-sm rounded btn-success"><strong>VEGETARIAN</strong></button>
+              <h3><span class="text-warning">&star;</span> Japanese Gyozas</h3>
+              <p><span class="text-warning">&star;</span> 659 calories</p>
+            </div>
+            <div>
+              <p><span class="text-warning">&star;</span> NutriScore 74</p>
+              <p><span class="text-warning">&star;</span> 4.9 Rating (537)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4  p-3 ">
+        <div class="bg-white rounded shadow meal-card">
+          <div class="rounded">
+            <img class="rounded" src="img/4_onmifood.jpg" alt="abc" width="100%" height="400px">
+          </div>
+          <div class="mt-4 p-3 px-5 meal-card-body">
+            <div>
+              <button class="btn btn-sm rounded btn-success"><strong>VEGAN</strong></button>
+              <button class="btn btn-sm rounded " style="background-color: rgb(250, 250, 3);"><strong>PALED</strong></button>
+              <h3><span class="text-warning">&star;</span> Japanese Gyozas</h3>
+              <p><span class="text-warning">&star;</span> 659 calories</p>
+            </div>
+            <div>
+              <p><span class="text-warning">&star;</span> NutriScore 74</p>
+              <p><span class="text-warning">&star;</span> 4.9 Rating (537)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4  p-4  ">
+        <div >
+          <div class="px-5  py-3">
+            <h3>Works with any dite:</h3>
+             <ul type="none">
+              <li class="mt-5"><a class="links" href="#"><span class="text-warning">&check;</span> Vegetarian</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Vegan</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Pescatarian</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Gluten-free</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Lactose-free</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Keto</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Paleo</a></li>
+              <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Low FODMAP</a></li>
+               <li class="mt-3"><a class="links" href="#"><span class="text-warning">&check;</span> Kid-friendly</a></li>
+              
+            </ul> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--    -->
+ <div class="text-center mt-3">      
+        <a href="#"  class="text-warning fs-4">see all recipes <span >&RightArrow;</span> </a>
+      </div>
+      <!--  -->
+ <div id="y" class="container-fluid bg-light">
+    <div class="row p-5">
+      <div class="col-sm-6 p-3">
+        <P class="text-warning">TESTIMONIALS</P>
+        <h1>Once you try it, you</h1>
+        <h1>can't go back</h1>
+        <div class="row">
+          <div class="col-sm-6 p-3">
+            <img class="rounded-circle" src="img/laura-jones.jpg" alt="adniajd" width="20%" height="45px">
+            <p class="mt-3">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.
+                
+            </p>
+            <p>-laura</p>
+          </div>
+          <div class="col-sm-6 p-3">
+            <img class="rounded-circle" src="img/laura-jones.jpg" alt="adniajd" width="20%" height="45px">
+            <p class="mt-3">The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!
+                
+            </p>
+            <p>-laura</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 p-3">
+            <img class="rounded-circle" src="img/laura-jones.jpg" alt="adniajd" width="20%" height="45px">
+            <p class="mt-3">Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!
+
+            </p>
+            <p>-laura</p>
+          </div>
+          <div class="col-sm-6 p-3">
+            <img class="rounded-circle" src="img/laura-jones.jpg" alt="adniajd" width="20%" height="45px">
+            <p class="mt-3">Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!</p>
+            <p>-laura</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 p-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/5_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img  src="img/6_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/7_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+      
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-4">
+            <img src="img/8_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/7_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/5_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+      
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/6_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/7_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/8_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+      
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-4">
+            <img src="img/5_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/6_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/7_onmifood.jpg" alt="abc" width="100%" height="170px">
+          </div>
+      
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="container">
+    <div class="text-start">
+      <p class="text-warning">PRICING</p>
+      <h1>Eating well without breaking the bank</h1>
+      <div class="row mt-5 p-3">
+        <div class="col-sm-6  text-end">
+          <div class="bg-white border rounded text-center p-5" style="width: 70%; height: 500;" >
+            <p><spam class="text-warning"><strong>STARTER</strong></spam></p>
+            <h1 class="display-4"><strong>$399</strong> </h1>
+            <p>per month. That's just $13 per meall</p>
+            <div class="my-4 text-start">
+              
+            <p class="fs-4"><span class="text-warning">&check;</span> 1 meal per day</p>
+            <p class="fs-4"><span class="text-warning">&check;</span> Order from 11am to 9am</p>
+            <p class="fs-4"><span class="text-warning">&check;</span> Delivery is free</p>
+            <P><span class="text-warning">&check;</span></P>
+
+            </div>
+            
+           <button type="button" class="btn btn-warning border-none rounded "><strong>Start eating well</strong></button>
+
+
+          </div>
+
+          
+        </div>
+        <div class="col-sm-6">
+          <div class="bg border rounded text-center p-5" style="width: 70%; height: 500;">
+            <p><spam class="text-warning"><strong>COMPLETE</strong></spam></p>
+            <h1 class="display-4"><strong>$699</strong> </h1>
+            <p>per month. That's just $11 per meall</p>
+            <div class="my-4 text-start">
+              
+            <p class="fs-4"><span class="text-warning">&check;</span> 1 meal per day</p>
+            <p class="fs-4"><span class="text-warning">&check;</span> Order from 11am to 9am</p>
+            <p class="fs-4"><span class="text-warning">&check;</span> Delivery is free</p>
+            <p><span class="text-warning">&check;</span>Get access to latest recipes</p>
+
+            </div>
+            
+           <button type="button" class="btn btn-warning border-none rounded "><strong>Start eating well</strong></button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <p>price include all applicable taxes. you can cancel at any time.Both plans include the folling</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row p-3">
+      <div class="col-sm-3 p-4">
+        <img src="img/icons8-go-100.png" alt="go" width="20%" height="50px">
+        <h3>never cook again!</h3>
+        <p>Our subscriptions cover 365 days per year, even including major holidays.</p>
+      </div>
+      <div class="col-sm-3 p-4">
+        <img src="img/icons8-go-100.png" alt="go" width="20%" height="50px">
+        <h3>Local and organic</h3>
+        <p>Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+      </div>
+      <div class="col-sm-3 p-4">
+        <img src="img/icons8-go-100.png" alt="go" width="20%" height="50px">
+        <h3>No waste</h3>
+        <p>All our partners only use reusable containers to package all your meals.</p>
+      </div>
+      <div class="col-sm-3 p-4">
+        <img src="img/icons8-go-100.png" alt="go" width="20%" height="50px">
+        <h3>Pause anytime</h3>
+        <p>Going on vacation? Just pause your subscription, and we refund unused days.</p>
+      </div>
+    </div>
+  </div>
+  <!--   -->
+
+  <div class="container my-5  ">
+    <div class="row mt-3 rounded p-0 " style="overflow: hidden ;" >
+      <div class="col-sm-8 b1 p-5 " >
+        <h3><strong>Get Your Frist Meal for Free!</strong> </h3>
+        <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
+
+        <form>
+          <div class="row mt-5 p-2">
+            <div class="col-sm-6">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-control"  placeholder="vinayak sutar" >
+            </div>
+            <div class="col-sm-6">
+              <label for="email">Full Name</label>
+              <input type="text" id="email" class="form-control"  placeholder="vinayaksutar@gamil.com" >
+            </div>
+          </div>
+
+          <div class="row mt-3 p-2">
+            <div class="col-sm-6">
+              <label for="select1">where did you hear from us</label>
+              <select name="select1" id="select1" class="form-select" >
+                  <option value="none">choose one option</option>
+                  <option value="none">choose one option</option>
+                  <option value="none">choose one option</option> 
+              </select>
+            </div>
+            <div class="col-sm-6 text-center d-grid">
+                 <input type="submit"  class="btn btn-md b mt-4" value="Sign up now"> 
+            </div>
+          </div>
+          
+          
+          
+          
+        </form>
+      </div>
+      <div class="col-sm-4 bg-dark p-0 ">
+        <img src="img/Omnifood Images/eating.jpg" alt="abc" width="100%" height="450px">
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class="container p-3">
+    <div class="row ">
+      <div class="col-sm-3 ">
+        <h3>OMNIF<span class="text-warning">OO</span>D</h3>
+        <div class="my-4 text-secondary">
+          <i class="bi bi-facebook fs-3"></i>
+          <i class="mx-3 bi bi-instagram fs-3"></i>
+          <i class="bi bi-twitter fs-3"></i>
+          <i class="m-3 bi bi-whatsapp fs-3"></i>
+        </div>
+        <div class="mt-5">
+          <p class="text-secondary">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved</p>
+        </div>
+        
+          
+      </div>
+      <div class="col-sm-3">
+          <h3 class="text-secondary">Contact us</h3>
+          <p class="text-secondary mt-4">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p class="text-secondary">415-201-6370 hello@omnifood.com</p>
+      </div>
+      <div class="col-sm-2">
+        <h3 class="text-secondary">Account</h3>
+         <p class="fs-6 mt-4"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+      </div>
+      <div class="col-sm-2">
+        <h3 class="text-secondary">Company</h3>
+          <p class="fs-6 mt-4"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+      </div>
+      <div class="col-sm-2">
+        <h3 class="text-secondary">Resources</h3>
+         <p class="fs-6 mt-4"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+         <p class="fs-6"> <a href="#" class="text-secondary mt-4">Create account</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

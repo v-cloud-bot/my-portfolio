@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  
+  
+}
+
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+      a {
+        text-decoration: none;
+      }
+      .primary-color {
+        background-color:rgb(83, 2, 90);
+      }
+      
+      #grad {
+        background : linear-gradient(to right,rgb(247, 211, 106),rgb(146, 19, 249));
+      }
+      .pl {
+        padding-left: 18px;
+        ;
+      }
+      .mb-4 {
+        margin-bottom: 30px;
+      }
+      .c-img {
+        overflow: hidden;
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .c-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hover-zoom {
+        transition: transform 1s;
+      }
+      .hover-zoom:hover {
+        transform: scale(1.2);
+
+      }
+      .bg-o {
+        background-color:  antiquewhite;
+      }
+      .slider-wrapper {
+         overflow: hidden;
+         width: 100%;
+         padding: 30px 0;
+         background: #ffffff;
+       }
+       .slider {
+           animation: slide 80s linear infinite;
+           display: inline-flex;
+           gap: 20px;
+           padding: 0 20px;
+           width: auto;
+           flex-wrap: nowrap;
+       }
+       .slider .col {
+      }
+      /* hide occasion buttons until card hover */
+      /* image dimming and overlay on hover */
+      .card .card-img {
+        transition: filter 0.3s;
+      }
+      .card:hover .card-img {
+        filter: brightness(50%);
+      }
+      .card .card-img-overlay {
+        /* ensure overlay covers entire card */
+        background: transparent;
+      }
+      .card:hover .card-img-overlay {
+        /* background: rgba(93, 90, 90, 0.2); */
+      }
+      .card .card-img-overlay .btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        background-color: #fff;
+        color: #121212;
+        /* lighter shadow to avoid double dark effect */
+        /* box-shadow: 0 2px 6px rgba(66, 63, 63, 0.2); */
+      }
+      .card:hover .card-img-overlay .btn {
+        opacity: 1;
+        pointer-events: auto;
+      }
+       .slider .col {
+           min-width: 160px !important;
+           flex: 0 0 160px;
+       }
+       .slider .card {
+           height: 190px;
+           border: none;
+           background: #fff;
+           box-shadow: 0 4px 16px rgba(147, 37, 147, 0.3);
+           margin: 0 !important;
+           border-radius: 10px;
+           padding: 0 !important;
+       }
+       .slider .card-body {
+           padding: 20px 15px !important;
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           height: 100%;
+       }
+       .slider h4 {
+           font-size: 14px;
+           margin: 10px 0 0 0 !important;
+           font-weight: 700;
+           line-height: 1.3;
+           color: #6b1b67; /* purple text */
+       }
+       .slider .slide {
+           margin: 0 !important;
+       }
+       .slider img {
+           height: 100px !important;
+           width: 100px !important;
+           object-fit: contain;
+       }       .slider .row {
+           flex-wrap: nowrap !important;
+       }
+
+      
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-18 * 180px));
+  }
+} 
+    </style>
+  </head>
+  <body>
+    
+      <div class="container-fluid primary-color">
+        <div class="row  text-white" style="height: 55px;">
+          <div class="col-sm-4 ">     
+                 <img class="pl rounded" src="img/pnglogo.png" alt="abc" width="134px" height="60px" />
+                 <img class="bg-light rounded " src="https://www.pngjewellers.com/cdn/shop/files/Litestyle_logo_50x.svg?v=1745570239" alt="abc" width="118px" height="60px" />
+          </div>
+          <div class="col-sm-4 d-flex justify-content-center align-items-center" ><p>LEGACY SINCE 1832 <span >&rightarrow;</span> </p></div>
+          <div class="col-sm-4 d-flex justify-content-end align-items-center">
+            <div class="navbar navbar-expand-sm">
+              <!-- <p><small>
+               <a class="" href="#"></a>
+               <a class="text-white " href="#"></a>
+               <a class="text-white" href="#"></a>
+               </small>
+              </p> -->
+              <ul class="nav ">
+                <li class="nav-item"><a href="#" class="text-white nav-link"><i class="bi bi-shop"></i> Store Locator</a></li>
+                <li class="nav-item"><a href="#" class="text-white nav-link"><i class="bi bi-heart-fill"></i> Franchise</a></li>
+                <li class="nav-item"><a href="#" class="text-white nav-link"><i class="bi bi-app"></i> Metal Rates</a></li>
+              </ul>
+
+            </div>
+            
+           
+          </div>
+        </div>
+      </div>
+    
+    <!--  -->
+
+    <div class="container-fluid sticky-top bg-light">
+      <div class="row mt-1 p-2">
+        <div class="col-8 px-2 " >
+          <img src="img/pnglogo.png" alt="abc" width="110px" height="50px" />
+          
+            <a class="mx-2 text-dark" href="#">All jewellery</a>
+            <a class="mx-2 text-dark" href="#">Diamond</a>
+            <a class="mx-2 text-dark" href="#">Gold</a>
+            <a class="mx-2 text-dark" href="#">Bullions</a>
+            <a class="mx-2 text-dark" href="#">Investors</a>
+            <a class="mx-2 text-dark" href="#">Silver Pooja Items</a>
+          
+        </div>
+        <div class="col-4 pt-3 text-end">
+          <i class="m-1 bi bi-search"></i>
+          <i class="m-1 bi bi-person"></i>
+          <i class="m-1 bi bi-suit-heart"></i>
+          <i class="m-1 bi bi-cart3"></i>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="container-fluid">
+      <div class="row mt-2">
+        <div class="col-12">
+          <img src="img/pnj/Desktop_Banner_6c5fe532-d1ec-4dc1-8fb7-7024c5e2e563.jpg" alt="" width="100%" height="420px" />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="container-fluid mt-4" style="text-align: center">
+      <h1 class="p-2">Bestseller Collections</h1>
+      <div class="row mt-4 p-2">
+        <div class="col-2 p-2">
+          <div class=" c-img rounded-circle" style="height: 230px;">
+            <img class="hover-zoom " src="img/pnj/c_1" alt="abc" width="235px" >
+          </div>
+          <p class="fs-5 mt-3">Diamond Mangalsutra</p>
+        </div>
+        <div class="col-2 p-2">
+          <div class=" c-img rounded-circle" style="height: 230px;">
+            <img class="hover-zoom" src="img/pnj/c_2" alt="abc" width="230px">
+          </div>
+          <p class="fs-5 mt-3">Gold Bangles</p>
+        </div>
+        <div class="col-2 p-2">
+          <div class=" c-img rounded-circle" style="height: 230px;">
+            <img class="hover-zoom" src="img/pnj/c_6" alt="abc" width="230px">
+          </div>
+          <p class="fs-5 mt-3">Gold Earrings</p>
+        </div >
+        <div class="col-2 p-2">
+          <div class=" c-img rounded-circle" style="height: 230px;">
+            <img class="hover-zoom" src="img/pnj/c_4" alt="abc" width="230px">
+          </div>
+          <p class="fs-5 mt-3">Gold Chain</p>
+        </div>
+        <div class="col-2 p-2">
+          <div class=" c-img rounded-circle" style="height: 230px;">
+            <img class="hover-zoom" src="img/pnj/c_5" alt="abc" width="230px">
+          </div>
+          <p class="fs-5 mt-3">Gold Mangalsutra</p>
+        </div>
+        <div class="col-2 p-2">
+          <div class=" c-img rounded-circle" style="height: 230px;">
+            <img class="hover-zoom" src="img/pnj/c_6" alt="abc" width="230px">
+          </div>
+          <p class="fs-5 mt-3">Diamond Earrings</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--  -->
+    <div class="container-fluid mt-2 p-4 bg-light" style="text-align: center">
+      <h3>New Arrivals</h3>
+      <div class="row mt-3 py-5 px-3">
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_1.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Elegant Diamond Necklace – exclusive launch price Rs.9,438 <del>Rs10,438</del>
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_2.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Handcrafted Ruby Pendant, now only Rs.9,438 <del>Rs10,438</del>
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_3.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Pearl Drop Earrings with 10% off making charge, Rs.9,438 <del>Rs10,438</del>
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_4.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Stylish Silver Bracelet – now Rs.9,438 (was Rs.10,438)
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-12" style="text-align: center">
+          <button class="btn btn-lg  btn-dark rounded text-white">View All</button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <hr>
+    <!--  -->
+    <div class="container-fluid mt-2 p-4 bg-light" style="text-align: center">
+      <h3>Best Sellers</h3>
+      <div class="row mt-3 py-5 px-3">
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_1.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Timeless Gold Mangalsutra – top pick at Rs.9,438 <del>Rs10,438</del>
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_2.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Popular Diamond Studs, now Rs.9,438 <del>Rs10,438</del>
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_3.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Best-selling Ruby Ring at a special price Rs.9,438 <del>Rs10,438</del>
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+        <div class="col">
+          <img class="rounded" src="img/pnj/newarrivals_4.webp" alt="abc" width="100%" height="350px" />
+          <p>
+            Customer-favorite Silver Bracelet now Rs.9,438 (was Rs.10,438)
+          </p>
+          <p>You save Rs 1,000</p>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-12" style="text-align: center">
+          <button class="btn btn-lg  btn-dark rounded text-white">View All</button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    
+
+    <div class="container-fluid mt-4 p-4">
+      <div class="text-center">
+        <h1>PNJ Jewellers</h1>
+        <p class="mt-4">A paradise of precious jewels</p>
+      </div>
+      
+
+      <div class="row mt-5 bg-light">
+        <div class="col-6"><img style="border-radius: 30px;" src="img/pnj/address.webp" alt="abc" width="100%" height="410px"></div>
+        <div class="col-6 p-5 ">
+          <div class="p-4">
+            <h1>Beginnings Cornerstone of</h1>
+          <h1>each story!</h1>
+          <h2></h2>
+          <p>Our journey began with a passion for craftsmanship and a commitment to elegance. Each piece tells a story of heritage and artistry.</p>
+          <button type="button" class="btn btn-outline-dark">Read More</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <hr>
+
+    <div class="container-fluid mt-3">
+       <div class="text-center">
+        <h3>Shope by Occasion</h3>
+      </div>
+      
+      <div class="row mt-5 px-4">
+        <div class="card col "><img class="card-img" style="border-radius: 30px;" src="img/pnj/occasion_1.webp" alt="abc" width="100%" height="440px" />
+          <div class="card-img-overlay d-flex justify-content-center align-items-end my-3">
+            <a href="#" class="btn btn-lg rounded btn-light " >Wedding </a>
+          </div>
+        </div>
+        <div class="card col ">
+          <img class="card-img" style="border-radius: 30px;" src="img/pnj/occasion_2.webp" alt="abc" width="100%" height="440px" />
+          <div class="card-img-overlay d-flex justify-content-center align-items-end my-3">
+            <a href="#" class="btn btn-lg rounded btn-light " >Gifting </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mb-4">
+      <div class="row mt-3 px-4">
+        <div class="card col "><img class="card-img" style="border-radius: 30px;" src="img/pnj/occasion_3.webp" alt="abc" width="100%" height="440px" />
+          <div class="card-img-overlay d-flex justify-content-center align-items-end my-3">
+            <a href="#" class="btn btn-lg rounded btn-light " >Daily Wear </a>
+          </div>
+        </div>
+        <div class="card col "><img class="card-img" style="border-radius: 30px;" src="img/pnj/occasion_4.webp" alt="abc" width="100%" height="440px" />
+          <div class="card-img-overlay d-flex justify-content-center align-items-end my-3">
+            <a href="#" class="btn btn-lg rounded btn-light " >Traditional </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <hr>
+    <!--  -->
+    <div class="container-fluid mt-5">
+      
+      
+
+      <div class="row my-5 bg-light ">
+        <div class="col-6"><img style="border-radius: 30px;" src="img/pnj/address.webp" alt="abc" width="100%" height="410px"></div>
+        <div class="col-6 p-5 ">
+          <div class="p-4">
+            <h1>Find a jewellery store near you!</h1>
+         
+         
+             <p>Explore iconic traditional jewellery, gold and diamond engagement rings, silver classics, elegant accessories, and precious gifts for any occasion at our PNG Jewellers stores across the globe.</p>
+          <button type="button" class="btn btn-outline-dark">Find a Store Location</button>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <!--  -->
+    <div class="container-fluid mt-5">
+      <div class="text-center">
+        <h3>Styled by PNG for celebrities</h3>
+        <p>From red carpets to intimate events, our designs grace the finest celebrities across the globe.</p>
+
+      </div>
+      <div class="row mt-5 text-white px-5 p-3">
+        <div class="col-3 px-2">
+          <div class="row">
+            <div class="col "><img style="border-radius: 20px;" src="img/pnj/celebrities_1.avif" alt="abc" width="100%" height="340px"></div>
+          </div>
+          <div class="row mt-2">
+            <div class="col"><img style="border-radius: 20px;" src="img/pnj/celebrities_3.avif" alt="abc" width="100%" height="340px"></div>
+          </div>
+        </div>
+        <div class="col-6 px-2"><img style="border-radius: 20px;" src="img/pnj/celebrities_5.webp" alt="abc" width="100%" height="685px"></div>
+
+        <div class="col-3 px-2">
+          <div class="row">
+            <div class="col"><img style="border-radius: 20px;" src="img/pnj/celebrities_7.avif" alt="abc" width="100%" height="340px"></div>
+          </div>
+          <div class="row mt-2">
+            <div class="col"><img style="border-radius: 20px;" src="img/pnj/celebrities_9.avif" alt="abc" width="100%" height="340px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+<hr>
+    <div class="container-fluid mt-4">
+      <div class="text-center">
+        <h1>Blog Post</h1>
+      </div>
+      <div class="row mt-5 px-4 py-3 ">
+        <div class="col-4 text-center">
+          <img style="border-radius: 25px;" src="img/pnj/blog_1.webp" alt="abc" width="100%" height="280px" />
+         <p class="mt-3"> 
+         
+            September 30, 2025
+            Elegant Jewellery for Sacred Vows: Wedding Collection to 
+         
+          </p>
+        
+          
+            
+            
+          
+
+         
+         
+        </div>
+        <div class="col-4 text-center">
+          <img style="border-radius: 25px;" src="img/pnj/blog_2.webp" alt="abc" width="100%" height="280px" />
+         <p class="mt-3"> 
+         
+            September 30, 2025
+            Elegant Jewellery for Sacred Vows: Wedding Collection to 
+         
+          </p>
+          
+        </div>
+        <div class="col-4 ">
+          <h2>Most Popular</h2>
+          <hr>
+          <div class="row mt-4">
+            <div class="col-4">
+              <img style="border-radius: 25px;" src="img/pnj/blog_1.webp" alt="abc" width="80%" height="100px" />
+            </div>
+            <div class="col-8 mx-0 p-0">
+              <small class="fs-7">Wedding collection that celebrates love.</small>
+
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-4">
+              <img style="border-radius: 25px;" src="img/pnj/blog_2.webp" alt="abc" width="80%" height="100px" />
+            </div>
+            <div class="col-8 mx-0 p-0">
+              <small class="fs-7">Timeless pieces handcrafted for you.</small>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img style="border-radius: 25px;" src="img/pnj/blog_3.webp" alt="abc" width="80%" height="100px" />
+            </div>
+            <div class="col-8 mx-0 p-0">
+              <small class="fs-7">Explore the latest trends in luxury jewellery.</small>
+
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="text-center mt-4">
+        <button class="btn btn-dark text-white">View all</button>
+      </div>
+      </div>
+    </div>
+    <!--  -->
+    <hr>
+
+    <div class="container-fluid mt-4">
+        <div class="text-center">
+          <h3>PNG Promises</h3>
+          <p><small>Incredible rationales to shop with us!</small></p>
+        </div>
+      
+        <div class="slider-wrapper">
+           <div class="row mt-2 slider">
+              <div class="col text-center slide">
+                <div class="card d-flex justify-content-center s-img">
+                  <div class="card-body shadow">
+                    <img class="" src="img/pnj/promises_2_ecure_payment.jpg" alt="abc" width="70%" height="80px" />
+                    <h4 class="mt-2">Secure </h4>
+                    <h4>Payments</h4>
+                  </div>
+                </div>     
+              </div>
+              <div class="col text-center slide ">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-3_cod.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Cash on </h4>
+                        <h4>Delivery</h4>
+                      </div>     
+                    </div>
+               </div>
+               <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-4_BIS_Hallmark.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">BIS </h4>
+                        <h4>Hallmarked</h4>
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-5_Lifetime_Buyback_d5112d38-b116-42cf-a703-d3010fbf79cf.webp" alt="abc" width="70%" height="80px"/>
+                        <h4 class="mt-2">Lifetime </h4>
+                        <h4>Buyback</h4>
+                      </div>
+                      
+                    </div>
+               </div>
+               <div class="col text-center  slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-6_Free-shipping.webp" alt="abc" width="70%" height="80px"/>
+                        <h4 class="mt-2">Insured Free </h4>
+                        <h4>Shipping</h4>
+                      </div>
+                     
+                    </div>
+                </div>
+                <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-7_BIS_Hallmark.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Purity </h4>
+                        <h4>Guarantee</h4>
+                      </div>
+                      
+                    </div>
+               </div>
+               <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-8_Lifetime_Exchange_d1a6787b-9aab-45c2-b741-14d281e26b4e.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Lifetime </h4>
+                        <h4>Exchange</h4> 
+                      </div>
+                      
+                    </div>
+               </div>
+               <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-9_Gold_Exchange_f792f415-5478-4ac5-b974-2b5ce37d0122.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Gold </h4>
+                        <h4>Exchange</h4>
+                      </div>
+                      
+                    </div>
+                </div>
+               <div class="col text-center slide ">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-1_14-Day_Returns.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">14-Day </h4>
+                        <h4>Returns</h4>
+                      </div>
+                      
+                    </div>
+                </div>
+              <!-- Duplicate items for seamless loop -->
+              <div class="col text-center slide">
+                <div class="card d-flex justify-content-center s-img">
+                  <div class="card-body shadow">
+                    <img class="" src="img/pnj/promises_2_ecure_payment.jpg" alt="abc" width="70%" height="80px" />
+                    <h4 class="mt-2">Secure </h4>
+                    <h4>Payments</h4>
+                  </div>
+                </div>     
+              </div>
+              <div class="col text-center slide ">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-3_cod.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Cash on </h4>
+                        <h4>Delivery</h4>
+                      </div>     
+                    </div>
+               </div>
+               <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-4_BIS_Hallmark.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">BIS </h4>
+                        <h4>Hallmarked</h4>
+                      </div>
+                      
+                    </div>
+                </div>
+                <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-5_Lifetime_Buyback_d5112d38-b116-42cf-a703-d3010fbf79cf.webp" alt="abc" width="70%" height="80px"/>
+                        <h4 class="mt-2">Lifetime </h4>
+                        <h4>Buyback</h4>
+                      </div>
+                      
+                    </div>
+               </div>
+               <div class="col text-center  slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-6_Free-shipping.webp" alt="abc" width="70%" height="80px"/>
+                        <h4 class="mt-2">Insured Free </h4>
+                        <h4>Shipping</h4>
+                      </div>
+                     
+                    </div>
+                </div>
+                <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-7_BIS_Hallmark.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Purity </h4>
+                        <h4>Guarantee</h4>
+                      </div>
+                      
+                    </div>
+               </div>
+               <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-8_Lifetime_Exchange_d1a6787b-9aab-45c2-b741-14d281e26b4e.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Lifetime </h4>
+                        <h4>Exchange</h4> 
+                      </div>
+                      
+                    </div>
+               </div>
+               <div class="col text-center slide">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-9_Gold_Exchange_f792f415-5478-4ac5-b974-2b5ce37d0122.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">Gold </h4>
+                        <h4>Exchange</h4>
+                      </div>
+                      
+                    </div>
+                </div>
+               <div class="col text-center slide ">
+                    <div class="card d-flex justify-content-center s-img">
+                      <div class="card-body shadow">
+                        <img class="" src="img/pnj/promises-1_14-Day_Returns.webp" alt="abc" width="70%" height="80px" />
+                        <h4 class="mt-2">14-Day </h4>
+                        <h4>Returns</h4>
+                      </div>
+                      
+                    </div>
+                </div>
+    </div>
+    </div>
+  </div>
+    
+
+    <div class="container-fluid mt-4">
+      <div id="grad" class="row mt-2 p-5 text-center ">
+        <div class="col-6 text-white">
+          <p><small>Latest from PNG Jewellers</small></p>
+          <p><small>Be the first to know about exciting new designs, special events, store openings and much more.</small></p>
+          <div class="row p-1 bg-light fs-7 rounded mt-5">
+            <div class="col-8 text-dark text-start" ><p>Email</p></div>
+            <div class="col-4 text-end"><button class="btn btn-dark btn-md btn-light">SUBSCRIBE</button></div>
+          </div>
+        </div>
+        <div class="col-6 p-5 text-center text-white ">
+          <p>Connect</p>
+          <i class="m-2 bi bi-facebook"></i>
+          <i class="m-2 bi bi-instagram"></i>
+          <i class="m-2 bi bi-twitter"></i>
+          <i class="m-2 bi bi-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-o">
+      <div class="row mt-2 height2 p-4">
+        <div class="col-3 p-4">
+           <h4><a href="#" class="text-dark">Know Us</a></h4>
+          <p><a href="" class="text-dark">Our Story</a></p>
+          <p><a href="" class="text-dark">Media Library</a></p>
+          <p><a href="" class="text-dark">Blogs</a></p>
+          <p><a href="" class="text-dark">Careers</a></p>
+        </div>
+        
+        <div class="col-2 p-4">
+          <h4><a href="#" class="text-dark">PNG Promises</a></h4>
+          <p><a href="" class="text-dark">14-Day Returns</a></p>
+          <p><a href="" class="text-dark">Free Shipping</a></p>
+          <p><a href="" class="text-dark">Certification</a></p>
+          <p><a href="" class="text-dark">Lifetime Buyback</a></p>
+          <p><a href="#" class="text-dark">Lifetime Exchange</a></p>
+          <p><a href="" class="text-dark">FPP/DPP</a></p>
+        </div>
+        <div class="col-2 p-4">
+           <h4><a href="#" class="text-dark">Customer Delight</a></h4>
+          <p><a href="" class="text-dark">FAQ</a></p>
+          <p><a href="" class="text-dark">Policies</a></p>
+          <p><a href="" class="text-dark">Book Appointment</a></p>
+          <p><a href="" class="text-dark">Contact Us</a></p>
+          <p><a href="" class="text-dark">Offer T&C <sup>*</sup></a></p>
+        </div>
+        <div class="col-2 p-4">
+           <h4><a href="#" class="text-dark">Education</a></h4>
+          <p><a href="" class="text-dark">Size</a></p>
+          <p><a href="" class="text-dark">Jewellery Care Guide</a></p>
+          <p><a href="" class="text-dark">Know Your Diamond</a></p>
+          <p><a href="" class="text-dark">Know Your Gemstone</a></p>
+          <p><a href="" class="text-dark">Franchise</a></p>
+        </div>
+        <div class="col-3 p-4">
+          
+          <p><a href="#" class="text-dark">Get in Touch</a></p>
+          <p><a href="" class="text-dark">abc@gmail.com</a></p>
+          <p><a href="" class="text-dark">+919809XXXXXX</a></p>
+          <p><a href="" class="text-dark"><Strong>Business Hours</Strong></a></p>
+          <p><a href="" class="text-dark">Sunday-Saturday</a></p>
+            <p><a href="" class="text-dark">10:00 AM - 6:00Pm</a></p>
+        
+        </div>
+      </div>
+    </div>
+<!--  -->
+    <hr>
+    <div class="container-fluid">
+      <div class="row mt-2 p-3 text-center">
+        <div class="col "><p><small>&copy; 2025PNG jewellery.All rights reserved.</small></p></div>
+      </div>
+    </div>
+
+    
+    
+  </body>
+</html>
