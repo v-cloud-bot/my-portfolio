@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "../style/animation.css";
-import "../style/portfolio.css";
+import "../style/common.css"; // shared styles for overlays and cards
 import { useNavigate } from 'react-router-dom';
 
 export default function Portfolio() {

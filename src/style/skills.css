@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(16px, 2vw, 22px);
+    margin: 0;
+}
+/* skills section specific styling */
+
+/* heading area for skills */
+.section-heading {
+    margin-bottom: 4rem; /* Increased margin for more space */
+    text-align: center; /* Align heading and paragraph to the center */
+}
+.section-heading .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase; /* Match screenshot */
+}
+.section-heading p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* icon placeholder in media-left */
+.icon {
+    width: 120px;
+    flex-shrink: 0; /* Prevent the icon from shrinking or being stretched by content */
+    height: 120px;
+    border-radius: 50%;
+    background-color: #00bcd4; /* turquoise */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* (removed right-alignment overrides) */
+
+/* ensure media items are centered vertically */
+
+
+#skills .media-body {
+    margin-left: 1rem;
+}
+/* text under the icon */
+.media-body h4 {
+    margin-top: 0; /* Removed top margin to align with screenshot */
+    font-weight: 600;
+}
+
+.media-body p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* fallback spacing for older layout support */
+/* #skills .row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
