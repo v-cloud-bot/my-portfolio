@@ -13,8 +13,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero-section d-flex align-items-center justify-content-center text-center">
-      <div className="container">
+    <section className=" hero-section d-flex align-items-center justify-content-center text-center ">
+      <div className="container ">
         <h1 className="fw-bold mb-3 display-4 text-uppercase">
           HI, MY NAME IS VINAYAK & I AM A <br />
           <div className="sliding-text-container">

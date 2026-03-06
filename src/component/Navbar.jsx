@@ -7,7 +7,7 @@ const Navbar = () => {
     nav('/');
   }
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3 sticky-top">
       <div className="container">
         {/* Logo / Brand */}
         <button className="btn navbar-brand" onClick={()=> gohome()}>

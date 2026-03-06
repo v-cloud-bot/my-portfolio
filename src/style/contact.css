@@ -1,0 +1,18 @@
+.contact-body {
+  text-align: center;
+  padding: 50px;
+  height: 450px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  background-color: rgb(3, 156, 176);
+
+}
+
+.contact-body .btn-contact {
+  padding: 15px 35px;
+  background-color: white;
+  color: black;
+
+}

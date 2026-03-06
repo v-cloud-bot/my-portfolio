@@ -43,4 +43,11 @@
   }
 }
 
-
+@media (max-width: 768px) {
+  .reset-anim, .animate-left, .animate-right {
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+}

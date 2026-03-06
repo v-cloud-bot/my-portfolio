@@ -41,7 +41,7 @@ export default function Skills() {
 
   return (
     // The outer div is redundant; the component can return the section directly.
-    <section id="skills" className="mt-5" ref={sectionRef}>
+    <section id="skills" className="skills-section mt-5" ref={sectionRef}>
       <div className="container">
         <div className="section-heading text-center">
           {/* The `wow` classes have been replaced with a conditional class based on IntersectionObserver state
@@ -60,7 +60,7 @@ export default function Skills() {
             // Stagger the animation for each skill card for a smoother effect
             const delay = 400 + 200 * (idx + 1); // ms
             return (
-              <div key={skill.name} className="col-md-4 mb-5">
+              <div key={skill.name} className="col-sm-4 mb-5">
                 {/* Using IntersectionObserver state to trigger animations */}
                 <div
                   className={`media d-flex align-items-center ${isIntersecting ? 'animate-left' : 'reset-anim'}`}
