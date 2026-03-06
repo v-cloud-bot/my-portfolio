@@ -5,12 +5,12 @@ import "../style/skills.css";
 
 // It's a good practice to use more descriptive content.
 const SKILLS = [
-  { name: 'HTML', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.' },
-  { name: 'CSS', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.' },
-  { name: 'Javascript', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.' },
-  { name: 'REACT', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.' },
-  { name: 'JAVA', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.' },
-  { name: 'SQL', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.' },
+  { name: 'HTML', description: 'Proficient in creating structured and semantic web pages using HTML5. Experienced with modern HTML features for building accessible and well-organized content that works across all platforms.' },
+  { name: 'CSS', description: 'Skilled in styling web applications with CSS3, including Flexbox, Grid, and animations. Capable of creating responsive designs that work across various devices and screen sizes, ensuring a consistent user experience.' },
+  { name: 'Javascript', description: 'Strong understanding of modern JavaScript (ES6+), including concepts like asynchronous programming, closures, and the event loop. Used to build interactive and dynamic user interfaces that enhance user engagement.' },
+  { name: 'REACT', description: 'Experienced in building single-page applications with React. Proficient with hooks, context API, and state management libraries like Redux for creating scalable and maintainable components and complex applications.' },
+  { name: 'JAVA', description: 'Solid background in Java for backend development, including experience with frameworks like Spring Boot to build robust and scalable server-side applications and RESTful APIs for a variety of business needs.' },
+  { name: 'SQL', description: 'Competent in writing complex SQL queries, designing database schemas, and working with relational databases like MySQL and PostgreSQL to manage and retrieve data efficiently and securely.' },
 ];
 
 
@@ -50,8 +50,7 @@ export default function Skills() {
             Skills
           </h1>
           <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
-            quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
+            Here is a summary of my technical skills and the technologies I specialize in. I am always eager to learn new tools and improve my craft.
           </p>
         </div>
 
@@ -60,7 +59,7 @@ export default function Skills() {
             // Stagger the animation for each skill card for a smoother effect
             const delay = 400 + 200 * (idx + 1); // ms
             return (
-              <div key={skill.name} className="col-sm-4 mb-5">
+              <div key={skill.name} className="col-4 mb-5">
                 {/* Using IntersectionObserver state to trigger animations */}
                 <div
                   className={`media d-flex align-items-center ${isIntersecting ? 'animate-left' : 'reset-anim'}`}

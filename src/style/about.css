@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .reset-anim, .animate-text, .animate-img {
     animation: none !important;
     opacity: 1 !important;

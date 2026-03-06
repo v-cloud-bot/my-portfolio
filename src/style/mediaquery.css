@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px)  {
+@media screen and (min-width: 0px) and  (max-width: 1200px)  {
   
   .hero-section {
     min-height: 68vh;
@@ -42,10 +42,56 @@
 }
 
 .media {
+  height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
+
+.media:hover {
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* width */
+.media::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.media::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.media:hover::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.media::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover container */
+.media:hover::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.media::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.media::-webkit-scrollbar-button {
+  display: none;
+
+}
+
+
+
 .media-body {
-  padding: 0;
-  margin-top:20px ;
+  margin: 20px;
 }
+
 }
