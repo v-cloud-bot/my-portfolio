@@ -1,7 +1,7 @@
 .hero-section {
   min-height: 88vh;
   background-color: #fcfcfc;
-  /* Optional: add your background image here */
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/slider.jpg") center/cover fixed;
 }
 
 .sliding-text-container {

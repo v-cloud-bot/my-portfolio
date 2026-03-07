@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "../style/about.css";
+import { Link } from 'react-router-dom';
 
 export default function About() {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -32,7 +33,7 @@ export default function About() {
               <h2>ABOUT ME</h2>
               <p>Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia...</p>
               <p>Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries</p>
-              <a href="#works" className="btn-view-works">View Works</a>
+              <Link to="/projects/resume"  className="btn-view-works">View Works</Link>
             </div>
           </div>
 

@@ -40,16 +40,16 @@ const Navbar = () => {
               <Link className="nav-link fw-bold text-dark" to="/" >HOME</Link>
             </li>
             <li className="nav-item px-2">
-              <Link className="nav-link fw-bold text-dark" to="/a" >ABOUT</Link>
+              <Link className="nav-link fw-bold text-dark" to="/about" >ABOUT</Link>
             </li>
             <li className="nav-item px-2">
-              <Link className="nav-link fw-bold text-dark" to="/p">PORTFOLIO</Link>
+              <Link className="nav-link fw-bold text-dark" to="/portfolio">PORTFOLIO</Link>
             </li>
             <li className="nav-item px-2">
-              <Link className="nav-link fw-bold text-dark" to="/r" >RESUME</Link>
+              <Link className="nav-link fw-bold text-dark" to="/projects/resume" >RESUME</Link>
             </li>
             <li className="nav-item px-2">
-              <Link className="nav-link fw-bold text-dark" to="/c">CONTACT</Link>
+              <Link className="nav-link fw-bold text-dark" to="/contact">CONTACT</Link>
             </li>
              
           </ul>

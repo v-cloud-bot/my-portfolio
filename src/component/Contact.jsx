@@ -35,7 +35,7 @@ export default function Contact() {
                             <div className={`block ${isIntersecting ? 'animate-left' : 'reset-anim'}`}>
                                 <h2 className="title">SO WHAT YOU THINK ?</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br />possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                                <Link to="/c" className="btn btn-default btn-contact">Contact With Me</Link>
+                                <Link to="/contact" className="btn btn-default btn-contact">Contact With Me</Link>
                             </div>
                         </div>
                         
